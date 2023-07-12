@@ -21,4 +21,4 @@ console.log("Delicious! May I have another?");
 remove(fruit, fruitChoice);
 
 // Log final message
-console.log(`I'm sorry, we're all out. We have ${fruit} left.`);
+console.log(`I'm sorry, we're all out. We have ${fruit.length} other fruit types left.`);
