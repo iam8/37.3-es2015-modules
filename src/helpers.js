@@ -10,7 +10,8 @@
  * Return a randomly-selected item from an array of items.
  */
 function choice(items) {
-
+    const randIdx = Math.floor(Math.random() * items.length);
+    return items[randIdx];
 }
 
 
@@ -19,5 +20,14 @@ function choice(items) {
  * undefined.
  */
 function remove(items, item) {
+    const itemIdx = items.indexOf(item);
 
+    if (itemIdx !== -1) {
+
+        items.splice(itemIdx, 1);
+        return item;
+    }
 }
+
+
+export {choice, remove};
